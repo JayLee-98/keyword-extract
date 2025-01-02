@@ -35,16 +35,7 @@ class TextAnalyzer:
         # BERT 모델 초기화
         self.bert_tokenizer = AutoTokenizer.from_pretrained("klue/bert-base")
         self.bert_model = AutoModel.from_pretrained("klue/bert-base")
-
-
-
-# Python Code
-
-
-tokenizer = AutoTokenizer.from_pretrained("noahkim/KoT5_news_summarization")
-model = AutoModelForSeq2SeqLM.from_pretrained("noahkim/KoT5_news_summarization")
-
-        
+       
         # BART 모델 초기화 
         self.bart_tokenizer = AutoTokenizer.from_pretrained("gogamza/kobart-base-v2")
         self.bart_summarizer = pipeline(
